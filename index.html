@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Card Selection Form</title>
+</head>
+<body class="dark-theme">
+    <div>
+        <div id="card-form" class="deck">
+            <div id="card1" class="card" data-index="0">♥</div>
+            <div id="card2" class="card" data-index="1">♦</div>
+            <div id="card3" class="card" data-index="2">♣</div>
+            <div id="card4" class="card" data-index="3">♠</div>
+        </div>
+        
+        
+        <input type="text" id="userInput" placeholder="Enter your expression">
+        <div>
+            <button onclick="evaluateExpression()">Submit</button>
+            <button onclick="skipThisDeck()">Skip</button>
+        </div>
+        <p><span id="scoreDisplay">Score: 0</span></p>
+        <p><span id="errorDisplay"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
