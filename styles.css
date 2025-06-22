@@ -5,14 +5,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #191919;
+    background-color: #252525;
     color: #999;
 }
 
 .deck {
     margin: 20px auto;
     display:grid;
-    grid-template-columns: 120px 120px;
+    grid-template-columns: 145px 145px;
     grid-row: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -22,10 +22,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 125px;
     height: 150px;
     margin: 10px;
     font-size: 3em;
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
@@ -35,4 +36,37 @@ body {
     border: 2px solid purple;
     background-color: purple;
     background-color: rgba(128, 0, 128, 0.25);
+}
+
+.dark-button {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    margin: 16px 16px 8px 0px;
+    width: 140px;
+}
+
+.dark-button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.dark-input {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    border: 1px solid #555; /* Dark border */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+    width: 280px;
+}
+
+.dark-input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #666; /* Darker border on focus */
 }

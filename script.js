@@ -80,6 +80,7 @@ function calculate(userInput) {
 function skipThisDeck() {
     score -= 200;
     document.getElementById('scoreDisplay').innerText = `Score: ${score}`;
+    document.getElementById('errorDisplay').innerText = ``;
     refreshNumber();
 }
 
